@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% block content %}
+    <div class="container">
+      <h1>Photo Gallery</h1>
+      <div class="photo-container">
+        {% for photo in photos %}
+        <div class="photo">
+          <img src="{{ url_for('static', filename='img/' + photo.filename) }}" alt="{{ photo.title }}">
+          <div class="caption">{{ photo.filename }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock %}

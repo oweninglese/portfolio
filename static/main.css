@@ -1,0 +1,118 @@
+/* CSS for the Portfolio page */
+
+body {
+  background-color: white;
+  color: blacksmoke;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+  background-color: #232332;
+  padding: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+nav p {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: grey;
+  font-size: 4em;
+  margin: 20px 0;
+  font-family: 'Roboto Mono', monospace;  border-radius: 5px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+.photo .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.photo:hover .overlay {
+  opacity: 1;
+}
+
+.photo .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 0.5rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.logo img {
+  height: 10rem;
+  width: auto;
+}
+
+
+.logos img {
+  height: 5rem;
+  width: auto;
+}
+
+
+.logo-text {
+  display: inline-block;
+  color: rgb(31, 24, 9);
+  font-size: 5em;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(138, 127, 127, 0.836);
+
+}
